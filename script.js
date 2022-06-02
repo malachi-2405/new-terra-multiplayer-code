@@ -9,7 +9,7 @@ console.log(path.resolve());
 app.use('/', express.static(path.join(path.resolve(), 'dist')))
 
 
-app.listen(80);
+app.listen(3100);
 
 const socket = 3000
 
