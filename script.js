@@ -1,9 +1,9 @@
-import {createServer} from "http"
-import {Server} from "socket.io"
-import express from "express"
+const {createServer} = require("http")
+const {Server} = require("socket.io")
+const express = require("express")
 
 let app = new express();
-import path from 'path'
+const path = require('path')
 
 console.log(path.resolve());
 app.use('/', express.static(path.join(path.resolve(), 'dist')))
